@@ -1,0 +1,1 @@
+# wordPress_joyeria
