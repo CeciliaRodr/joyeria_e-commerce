@@ -1,1 +1,1 @@
-# wordPress_joyeria
+# joyeria_e-commerce
