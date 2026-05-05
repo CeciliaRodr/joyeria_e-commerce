@@ -1,33 +1,24 @@
 # --- Entorno Local ---
+# (Estos suelen estar un nivel arriba, pero si están aquí, dejalos)
 logs/
 conf/
 *.log
-local-xdebuginfo.php
 
 # --- WordPress Core ---
-# Es mejor no versionar el núcleo de WP para no pesar el repo
-app/public/wp-admin/
-app/public/wp-includes/
-app/public/wp-*.php
-app/public/index.php
-app/public/xmlrpc.php
-app/public/license.txt
-app/public/readme.html
-!app/public/wp-config-sample.php
+wp-admin/
+wp-includes/
+wp-*.php
+index.php
+xmlrpc.php
+license.txt
+readme.html
+!wp-config-sample.php
 
 # --- Configuración Sensible ---
-# IMPORTANTE: No subir estas claves para no pisar la DB de tus compañeras
-app/public/wp-config.php
-app/public/.htaccess
+wp-config.php
+.htaccess
 
 # --- Contenido de Usuario ---
-app/public/wp-content/upgrade/
-app/public/wp-content/cache/
-app/public/wp-content/blogs.dir/
-app/public/wp-content/uploads/
-
-# --- Otros ---
-.DS_Store
-Thumbs.db
-*.zip
-*.tar.gz
+wp-content/upgrade/
+wp-content/cache/
+wp-content/uploads/
