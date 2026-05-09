@@ -1,0 +1,1 @@
+[07-May-2026 14:10:09 UTC] PHP Warning:  Undefined property: WP_Ajax_Upgrader_Skin::$api in /home/david/Local Sites/joyeriae-commerce/app/public/wp-admin/includes/class-theme-upgrader.php on line 160
