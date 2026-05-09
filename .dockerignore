@@ -1,0 +1,6 @@
+conf/
+logs/
+app/sql/
+*.md
+wp-config-docker.php
+wp-config.php
