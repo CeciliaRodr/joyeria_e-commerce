@@ -35,7 +35,7 @@ v1.0
 
 **Repositorio**
 
-[GitHub del proyecto](https://github.com/)
+[GitHub del proyecto](https://github.com/majestuoso/joyeria_e-commerce.git)
 
 ## 1.1 Resumen ejecutivo
 
@@ -86,7 +86,7 @@ Completar con datos reales de cada integrante. Reemplazar los enlaces de LinkedI
 
 - Documentación integral del proyecto
 - Maquetación de Home y Tienda (Elementor Free)
-- Optimización de performance (Core Web Vitals)
+- Optimización de performance con lighthouse
 - Configuración de SEO técnico
 
 ## 2.2 Cecilia Rodriguez — Infraestructura y Gestión de Contenido
@@ -198,7 +198,7 @@ Completar con datos reales de cada integrante. Reemplazar los enlaces de LinkedI
 ### 🎨 Frontend
 
 - HTML5, CSS3, JavaScript (ES6)
-- SASS / Tailwind CSS
+- SASS /  CSS
 - Tema hijo basado en Astra / GeneratePress
 
 ### 🛒 E-commerce & Pagos-
@@ -218,8 +218,8 @@ Completar con datos reales de cada integrante. Reemplazar los enlaces de LinkedI
 
 ### ☁️ Infraestructura
 
-- **Hosting:** DonWeb / Hostinger
-- **Dominio:** NIC.ar (.com.ar)
+- **Hosting:** railwail
+- **Dominio:**(https://joyeria-rodriguez.up.railway.app/)
 - **SSL:** Let's Encrypt
 - **Email transaccional:** SendGrid / Mailgun
 
@@ -229,7 +229,7 @@ Completar con datos reales de cada integrante. Reemplazar los enlaces de LinkedI
 - **Control de versiones:** Git + GitHub
 - **Gestión:** Notion + Trello
 - **Comunicación:** Discord / Slack
-- **Testing:** Lighthouse, GTmetrix, BrowserStack
+- **Testing:** Lighthouse, 
 
 ---
 
@@ -255,9 +255,9 @@ flowchart TB
 
 | Entorno | URL | Propósito |
 | --- | --- | --- |
-| Desarrollo | [dev.proyecto.com](http://dev.proyecto.com) | Trabajo diario del equipo |
-| Staging | [staging.proyecto.com](http://staging.proyecto.com) | QA y aprobación del cliente |
-| Producción | [proyecto.com](http://proyecto.com) | Sitio en vivo |
+| Desarrollo | [dev.proyecto.com](https://github.com/CeciliaRodr/joyeria_e-commerce.git) | Trabajo diario del equipo |
+| Staging | [staging.proyecto.com](https://github.com/majestuoso/joyeria_e-commerce.git) | QA y aprobación del cliente |
+| Producción | [proyecto.com](https://joyeria-rodriguez.up.railway.app/) | Sitio en vivo |
 
 ---
 
