@@ -1,4 +1,5 @@
 FROM wordpress:php8.2-apache
+ARG CACHEBUST=1
 RUN rm -rf /etc/apache2/mods-enabled/mpm_* \
     && a2enmod mpm_prefork rewrite \
     && echo "ServerName localhost" >> /etc/apache2/apache2.conf
