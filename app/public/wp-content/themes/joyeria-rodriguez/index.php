@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main class="main-content">
-    <div class="breadcrumb">Inicio . Best Sellers</div>
+    <!-- Breadcrumb eliminado -->
     
     <div class="page-header">
         <h1 class="page-title">Best Sellers</h1>

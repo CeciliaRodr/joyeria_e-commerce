@@ -11,3 +11,6 @@ add_action( 'wp_enqueue_scripts', 'joyeria_enqueue_styles' );
 
 // Eliminar breadcrumb de WooCommerce
 remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
+add_action( 'init', function() {
+    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
+});

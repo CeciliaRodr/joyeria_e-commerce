@@ -43,7 +43,7 @@
 
             <!-- ACTIONS -->
             <div class="header-actions">
-                <a href="#" class="action-btn">
+                <a href="<?php echo home_url('/mi-cuenta'); ?>" class="action-btn">
                     <span class="action-icon">👤</span>
                     <span>Ingresar</span>
                 </a>

@@ -1,1 +1,9 @@
 [07-May-2026 14:10:09 UTC] PHP Warning:  Undefined property: WP_Ajax_Upgrader_Skin::$api in /home/david/Local Sites/joyeriae-commerce/app/public/wp-admin/includes/class-theme-upgrader.php on line 160
+[12-May-2026 02:25:21 UTC] WordPress database error Table 'local.wp_uwp_form_fields' doesn't exist for query SELECT fields.* FROM wp_uwp_form_fields fields JOIN wp_uwp_form_extras extras ON extras.site_htmlvar_name = fields.htmlvar_name WHERE fields.form_type = 'account' AND fields.is_active = '1' AND fields.for_admin_use != '1' AND fields.is_register_field = '1' AND extras.form_type = 'register' AND extras.form_id=1 AND fields.form_id=1 ORDER BY extras.sort_order ASC made by activate_plugin, do_action('activate_userswp/userswp.php'), WP_Hook->do_action, WP_Hook->apply_filters, UsersWP_Activator::activate, UsersWP_Activator::install, UsersWP_Activator::add_default_options, uwp_get_default_form_data, get_register_form_fields
+[12-May-2026 03:05:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wc_get_customer_order_count() in /home/david/Local Sites/joyeriae-commerce/app/public/wp-content/themes/joyeria-rodriguez/page-my-account.php:14
+Stack trace:
+#0 /home/david/Local Sites/joyeriae-commerce/app/public/wp-includes/template-loader.php(132): include()
+#1 /home/david/Local Sites/joyeriae-commerce/app/public/wp-blog-header.php(19): require_once('/home/david/Loc...')
+#2 /home/david/Local Sites/joyeriae-commerce/app/public/index.php(17): require('/home/david/Loc...')
+#3 {main}
+  thrown in /home/david/Local Sites/joyeriae-commerce/app/public/wp-content/themes/joyeria-rodriguez/page-my-account.php on line 14
