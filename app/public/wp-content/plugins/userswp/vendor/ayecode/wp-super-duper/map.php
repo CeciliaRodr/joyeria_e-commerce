@@ -211,7 +211,7 @@ class SD_Map extends WP_Super_Duper {
 			'height'=> '425px',
 			'maptype'     => 'roadmap',
 			'zoom'     => '7',
-			'api_key'     => 'AIzaSyBK3ZcmK0ljxl5agNyJNQh_G24Thq1btuE',
+			'api_key'     => '',
 		);
 
 		/**
