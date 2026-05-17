@@ -17,4 +17,10 @@ define('WP_DEBUG', false);
 if ( ! defined( 'ABSPATH' ) ) {
     define( 'ABSPATH', __DIR__ . '/' );
 }
+define('FS_METHOD', 'direct');
+define('FORCE_SSL_ADMIN', false);
+$_SERVER['HTTPS'] = 'off';
+if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
+    $_SERVER['HTTPS'] = 'on';
+}
 require_once ABSPATH . 'wp-settings.php';
