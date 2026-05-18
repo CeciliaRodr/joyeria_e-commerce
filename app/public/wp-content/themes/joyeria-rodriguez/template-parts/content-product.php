@@ -1,21 +1,21 @@
 <article class="product-card">
     <div class="product-image-wrapper">
         <?php 
-        // Array con los nombres de archivos que tenés en la carpeta /05/
-        $mis_fotos = [
-            'photo-1611107683227-e9060eccd846.jpeg',
-            'photo-1721034911830-69bf7313dc05.jpeg',
-            'photo-1722410180670-b6d5a2e704fa.jpeg',
-            'photo-1727784635955-6e533b45463a.jpeg',
-            'photo-1728646996588-9ae7ef3c9633.jpeg',
-            'photo-1759651037868-eb8039c79ed1.jpeg'
-        ];
-
-        // Usamos el ID del post para elegir una foto del array (vía módulo)
-        $indice = get_the_ID() % count($mis_fotos);
-        $foto_asignada = $mis_fotos[$indice];
-        
-        $image_url = content_url( '/uploads/2026/05/' . $foto_asignada );
+        if (has_post_thumbnail()) {
+            $image_url = get_the_post_thumbnail_url(get_the_ID(), 'medium_large');
+        } else {
+            // Fotos de respaldo si no tiene imagen destacada
+            $mis_fotos = [
+    'photo-1611107683227-e9060eccd846.jpeg',
+    'photo-1721034911830-69bf7313dc05.jpeg',
+    'photo-1722410180670-b6d5a2e704fa.jpeg',
+    'photo-1727784635955-6e533b45463a.jpeg',
+    'photo-1728646996588-9ae7ef3c9633.jpeg',
+    'photo-1759651037868-eb8039c79ed1.jpeg',
+            ];
+            $indice = get_the_ID() % count($mis_fotos);
+            $image_url = content_url('/uploads/2026/05/' . $mis_fotos[$indice]);
+        }
         ?>
         
         <img src="<?php echo $image_url; ?>" 
