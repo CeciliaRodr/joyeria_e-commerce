@@ -273,27 +273,11 @@ img { max-width: 100%; display: block; }
   color: #e75480;
 }
 
-/* ===================== GRID DE PRODUCTOS ===================== */
+/* ===================== GRID DE PRODUCTOS (sin WooCommerce) ===================== */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-}
-
-@media (max-width: 1024px) {
-  .products-grid { grid-template-columns: repeat(3, 1fr); }
-}
-
-@media (max-width: 768px) {
-  .products-grid { grid-template-columns: repeat(2, 1fr); }
-  .footer-grid { grid-template-columns: repeat(2, 1fr); }
-  .top-bar { gap: 15px; font-size: 10px; }
-  .nav-container { overflow-x: auto; }
-}
-
-@media (max-width: 480px) {
-  .products-grid { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr; }
 }
 
 /* ===================== CARD DE PRODUCTO ===================== */
@@ -437,14 +421,216 @@ img { max-width: 100%; display: block; }
   margin: 0 auto;
   padding-top: 10px;
 }
-/* Ocultar breadcrumb WooCommerce */
+
+/* ===================== WOOCOMMERCE COMPLETO ===================== */
+
+/* Ocultar breadcrumb de WooCommerce */
 .woocommerce-breadcrumb,
 .breadcrumb,
-nav.woocommerce-breadcrumb,
-div.breadcrumb {
+nav.woocommerce-breadcrumb {
   display: none !important;
   visibility: hidden !important;
   height: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
+}
+
+/* Contenedor principal de WooCommerce */
+.woocommerce-page .woocommerce,
+.woocommerce {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 30px 20px !important;
+}
+
+/* Fondo consistente */
+.woocommerce-page body,
+body.woocommerce-page {
+  background-color: #fdf6f9 !important;
+}
+
+/* Grid de productos - 4 columnas como tu diseño */
+.woocommerce ul.products {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 20px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Cada producto como card */
+.woocommerce ul.products li.product {
+  border: 1px solid #ffe0ec !important;
+  border-radius: 12px !important;
+  background-color: #fff !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+/* Imagen del producto */
+.woocommerce ul.products li.product a img {
+  width: 100% !important;
+  height: 250px !important;
+  object-fit: cover !important;
+  margin: 0 !important;
+  display: block !important;
+}
+
+/* Título del producto */
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  color: #333 !important;
+  text-align: center !important;
+  padding: 15px 15px 5px 15px !important;
+  margin: 0 !important;
+}
+
+/* Precio */
+.woocommerce ul.products li.product .price {
+  text-align: center !important;
+  padding: 0 15px 5px 15px !important;
+  margin: 0 !important;
+  color: #c0396a !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+}
+
+/* Precio tachado (descuento) */
+.woocommerce ul.products li.product .price del {
+  color: #aaa !important;
+  font-size: 0.9rem !important;
+  margin-right: 8px !important;
+  text-decoration: line-through !important;
+}
+
+/* Precio de oferta */
+.woocommerce ul.products li.product .price ins {
+  background: none !important;
+  color: #c0396a !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+/* Botón "Añadir al carrito" */
+.woocommerce ul.products li.product .button {
+  background-color: #e75480 !important;
+  color: white !important;
+  border-radius: 20px !important;
+  border: none !important;
+  padding: 8px 16px !important;
+  margin: 0 15px 15px 15px !important;
+  display: block !important;
+  text-align: center !important;
+  font-size: 0.85rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.woocommerce ul.products li.product .button:hover {
+  background-color: #c0396a !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Responsive del grid */
+@media (max-width: 1024px) {
+  .woocommerce ul.products {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .woocommerce ul.products {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .footer-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .top-bar { gap: 15px; font-size: 10px; }
+  .nav-container { overflow-x: auto; }
+}
+
+@media (max-width: 480px) {
+  .woocommerce ul.products {
+    grid-template-columns: 1fr !important;
+  }
+  .footer-grid { grid-template-columns: 1fr !important; }
+  .products-grid { grid-template-columns: 1fr !important; }
+}
+
+/* Página de Mi Cuenta */
+.woocommerce-MyAccount-navigation ul {
+  list-style: none !important;
+  padding: 0 !important;
+  background: #fff8fb !important;
+  border-radius: 12px !important;
+  border: 1px solid #ffe0ec !important;
+  margin-bottom: 20px !important;
+}
+
+.woocommerce-MyAccount-navigation ul li {
+  margin: 0 !important;
+}
+
+.woocommerce-MyAccount-navigation ul li a {
+  color: #555 !important;
+  display: block !important;
+  padding: 10px 15px !important;
+  border-bottom: 1px solid #ffe0ec !important;
+}
+
+.woocommerce-MyAccount-navigation ul li:last-child a {
+  border-bottom: none !important;
+}
+
+.woocommerce-MyAccount-navigation ul li.is-active a,
+.woocommerce-MyAccount-navigation ul li a:hover {
+  color: #e75480 !important;
+  background: #fff0f5 !important;
+}
+
+/* Botones generales de WooCommerce */
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce #respond input#submit {
+  background-color: #e75480 !important;
+  color: white !important;
+  border-radius: 20px !important;
+  border: none !important;
+  padding: 8px 20px !important;
+  transition: all 0.2s ease !important;
+}
+
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce #respond input#submit:hover {
+  background-color: #c0396a !important;
+}
+
+/* Página del carrito */
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+  border-radius: 20px !important;
+  border: 1px solid #f8c8d8 !important;
+  padding: 8px !important;
+}
+
+.woocommerce-cart .cart-collaterals .cart_totals table {
+  border-collapse: collapse !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+
+/* Notificaciones */
+.woocommerce-message,
+.woocommerce-info,
+.woocommerce-error {
+  border-top-color: #e75480 !important;
+  border-radius: 8px !important;
+}
+
+.woocommerce-message::before,
+.woocommerce-info::before,
+.woocommerce-error::before {
+  color: #e75480 !important;
 }

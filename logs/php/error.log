@@ -7,3 +7,5 @@ Stack trace:
 #2 /home/david/Local Sites/joyeriae-commerce/app/public/index.php(17): require('/home/david/Loc...')
 #3 {main}
   thrown in /home/david/Local Sites/joyeriae-commerce/app/public/wp-content/themes/joyeria-rodriguez/page-my-account.php on line 14
+[17-May-2026 15:17:08 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[17-May-2026 15:43:27 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}

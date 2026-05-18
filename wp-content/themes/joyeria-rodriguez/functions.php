@@ -14,3 +14,9 @@ remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 )
 add_action( 'init', function() {
     remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
 });
+
+// Registrar usuario
+
+// ==============================================
+// SHORTCODE PARA PANEL DE MI CUENTA
+// ==============================================

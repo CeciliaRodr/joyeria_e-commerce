@@ -1,0 +1,1 @@
+echo '<?php echo "HOLA MUNDO - El servidor funciona correctamente"; ?>' > "/home/david/Local Sites/joyeriae-commerce/app/public/wp-content/themes/joyeria-rodriguez/prueba.php"
