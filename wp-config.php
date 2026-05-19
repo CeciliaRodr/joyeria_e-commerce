@@ -32,7 +32,8 @@ if ( ! defined( 'WP_DEBUG' ) ) {
 }
 
 define( 'WP_ENVIRONMENT_TYPE', 'local' );
-
+define( 'WP_HOME', 'https://joyeria-rodriguez.up.railway.app' );
+define( 'WP_SITEURL', 'https://joyeria-rodriguez.up.railway.app' );
 /* That's all, stop editing! Happy publishing. */
 
 if ( ! defined( 'ABSPATH' ) ) {
