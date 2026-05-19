@@ -26,4 +26,5 @@ app/public/wp-content/cache/
 app/public/wp-content/uploads/
 
 # --- Logs ---
-*.log
+*.logapp/sql/local.sql
+logs/php/php-fpm.log
